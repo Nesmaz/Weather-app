@@ -19,8 +19,6 @@ async function checkWeather(city){
         
     }
     let data = await Response.json();
-    console.log(data);
-
 
 document.getElementById('city').innerHTML=data.name;
 document.getElementById('weather').innerHTML=Math.round(data.main.temp) + ` °C`;
@@ -31,27 +29,27 @@ document.getElementById('wind').innerHTML=data.wind.speed + ` km/hr`;
 
 switch (weatherState){
     case 'Clouds':
-        img.src="/media/cloudy.png"
+        img.src="media/cloudy.png"
         document.getElementById('wState').innerHTML = "Cloudy!";
     break;
     case 'Clear':
-        img.src="./media/sunny.png"
+        img.src="media/sunny.png"
         document.getElementById('wState').innerHTML = "Sunny!";
     break;
     case 'Rain':
-        img.src="/media/rain.png"
+        img.src="media/rain.png"
         document.getElementById('wState').innerHTML = "Rainy!";
     break;
     case 'Drizzle':
-        img.src="/media/drizzle.png"
+        img.src="media/drizzle.png"
         document.getElementById('wState').innerHTML = "Mild rain!";
     break;
     case 'Mist':
-        img.src="/media/fog.png"
+        img.src="media/fog.png"
         document.getElementById('wState').innerHTML = "Misty!";
     break;
     case 'Snow':
-        img.src="/media/snowy.png"
+        img.src="media/snowy.png"
         document.getElementById('wState').innerHTML = "Snowy!";
     break;
 
@@ -65,6 +63,4 @@ document.querySelector('.error').style.display = 'none';
 
 searchBtn.addEventListener('click', ()=>{
     checkWeather(searchBox.value);
-console.log('zew');
-
 })
