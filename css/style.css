@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+
+}
+
+.container{
+    background-color: #07110d;
+    font-family: 'Merriweather', serif;
+    background-image: url(/media/greg-johnson-zZfw1ChCy9M-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    background-color: transparent;
+    /* width: 35%; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    box-shadow: rgba(171, 255, 114, 0.8) 0px 0px 15px 2px;
+}
+
+#search-bar{
+    margin: 15 px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#card input{
+    height: 2.8rem;
+    width: 80%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    background-color: rgba(24,53,43, 0.7);
+    color: rgb(207 251 236);
+    font-size: 1rem;
+    box-shadow: rgba(171, 255, 114, 0.8) 0px 0px 5px 1px;
+
+}
+
+#card input::placeholder{
+    color: rgb(207 251 236);
+}
+
+#card #search-bar button{
+    height: 44px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(207 251 236);
+    background-color:rgba(24,53,43, 0.7);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 44px;
+    box-shadow: rgba(171, 255, 114, 0.8) 0px 0px 5px 1px;
+    margin-left: 20px;
+
+}
+
+#card #search-bar button:hover{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    box-shadow: rgba(107, 175, 62, 0.8) 0px 0px 5px 1px;
+
+}
+
+#card #state{
+    margin: 10px auto 10px;
+    color: rgb(207 251 236);
+    text-align: center;
+}
+
+#card #state h4{
+    margin: 1rem auto;
+}
+#card #state h3{
+font-size: 26px;
+}
+#card #state p{
+    margin-bottom: 5px;
+}
+
+
+#state-img{
+    margin: 10px auto;
+}
+#info{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: rgb(207 251 236);
+}
+#info p{
+    margin-right: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+#info .col{
+    display: flex;
+    align-items: start;
+}
+#info .col img{
+    margin: 0 5px;
+} 
+
+#state,
+#info{
+    display: none;
+}
+
+.error{
+    margin-top: 10px;
+    color: rgb(190, 75, 7);
+    text-align: center;
+    display: none;
+}
