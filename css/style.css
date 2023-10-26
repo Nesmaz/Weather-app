@@ -12,7 +12,7 @@ body{
 .container{
     background-color: #07110d;
     font-family: 'Merriweather', serif;
-    background-image: url(/media/greg-johnson-zZfw1ChCy9M-unsplash.jpg);
+    background-image: url("media/greg-johnson-zZfw1ChCy9M-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
